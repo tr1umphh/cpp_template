@@ -9,8 +9,9 @@
 #ifndef _FRUIT_H
 #define _FRUIT_H
 
-#include <cstdint>
 #include <fmt/core.h>
+
+#include <cstdint>
 #include <string>
 
 /**
@@ -19,7 +20,7 @@
  *
  */
 class Animal {
-public:
+ public:
   virtual void greeting() = 0;
   /**
    * @brief Set name of the animal
@@ -35,7 +36,7 @@ public:
    */
   void setAge(uint8_t age) { this->age = age; }
 
-protected:
+ protected:
   std::string name;
   uint8_t age;
 };
@@ -46,7 +47,7 @@ protected:
  *
  */
 class Dog : public Animal {
-public:
+ public:
   Dog(std::string name, uint8_t age) {
     setName(name);
     setAge(age);
@@ -60,5 +61,5 @@ public:
   }
 };
 
-#endif // !_FRUIT_H
+#endif  // !_FRUIT_H
 #define _FRUIT_H

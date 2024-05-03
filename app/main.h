@@ -11,4 +11,4 @@
 
 const int wtf{69};
 
-#endif // !_MAIN_H
+#endif  // !_MAIN_H
