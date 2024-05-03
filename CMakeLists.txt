@@ -10,7 +10,9 @@ find_package(jsoncpp CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
 
 file(GLOB SOURCES app/*.cpp)
+add_subdirectory(tests)
 
+include_directories(libs)
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} PUBLIC JsonCpp::JsonCpp SQLiteCpp fmt::fmt pthread)
+target_link_libraries(${PROJECT_NAME} PRIVATE JsonCpp::JsonCpp SQLiteCpp fmt::fmt pthread)
