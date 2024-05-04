@@ -1,7 +1,5 @@
 {
   "dependencies": [
-    "sqlitecpp",
-    "jsoncpp",
     "fmt"
   ]
 }
